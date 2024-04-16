@@ -1,0 +1,16 @@
+Random Notes to Help Me Remember
+
+
+Content:
+
+src/app/components: Contains Angular components related to the application's UI.
+src/app/services: Contains services responsible for handling data and business logic.
+src/app/models: Contains TypeScript models representing data structures used in the application.
+src/assets: Contains static assets like images, fonts, and data files.
+src/environments: Contains environment configuration files for development and production.
+src/index.html: The main HTML file for the application.
+src/main.ts: The entry point of the application.
+src/styles.scss: Global styles for the application.
+angular.json: Angular CLI configuration file.
+package.json: Contains project dependencies and scripts.
+tsconfig.json: TypeScript configuration file.
