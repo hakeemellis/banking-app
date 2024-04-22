@@ -10,6 +10,11 @@ ng serve
 ng serve: to run app
 
 
+To update Angular:
+
+ng update @angular/cli @angular/core
+
+
 For Further Understanding:
 
 src/app/components: Contains Angular components related to the application's UI.

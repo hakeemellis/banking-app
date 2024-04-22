@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   selector: 'app-root', // to inject itself into the main route html in index.html
   templateUrl: './app.component.html', // to load the specified html
   styleUrls: ['./app.component.scss'], // to load the specified css
-  standalone: true  // To keep SSR from throwing an error
+  standalone: true  // To allow modularity in Angular v17 when doing certain operations
 })
 export class AppComponent {
 
