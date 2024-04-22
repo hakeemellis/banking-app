@@ -1,13 +1,18 @@
+// app.component.ts
+
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  selector: 'app-root', // to inject itself into the main route html in index.html
+  templateUrl: './app.component.html', // to load the specified html
+  styleUrls: ['./app.component.scss'], // to load the specified css
+  standalone: true  // To keep SSR from throwing an error
 })
 export class AppComponent {
-  title = 'banking-app';
+
+  signIn(): void {
+    console.log('Sign in button clicked');
+    // Add your sign-in logic here
+  }
 }
+
