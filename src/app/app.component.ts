@@ -1,18 +1,22 @@
 // app.component.ts
 
 import { Component } from '@angular/core';
+import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root', // to inject itself into the main route html in index.html
-  templateUrl: './app.component.html', // to load the specified html
-  styleUrls: ['./app.component.scss'], // to load the specified css
-  standalone: true  // To allow modularity in Angular v17 when doing certain operations
+  selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
 
-  signIn(): void {
-    console.log('Sign in button clicked');
-    // Add your sign-in logic here
+  constructor(private router: Router) {}
+
+  navigateToLogin(): void {
+    this.router.navigate(['login']);
   }
+
 }
 
