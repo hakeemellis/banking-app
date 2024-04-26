@@ -29,4 +29,4 @@ angular.json: Angular CLI configuration file.
 package.json: Contains project dependencies and scripts.
 tsconfig.json: TypeScript configuration file.
 
-<router-outlet/> : we use for routing within the Angular app
+<router-outlet></router-outlet> : loads nested routes in Angular

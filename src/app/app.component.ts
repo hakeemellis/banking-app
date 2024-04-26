@@ -1,7 +1,7 @@
 // app.component.ts
 
 import { Component } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,12 +11,6 @@ import { Router, RouterOutlet } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
-  constructor(private router: Router) {}
-
-  navigateToLogin(): void {
-    this.router.navigate(['login']);
-  }
 
 }
 
