@@ -1,0 +1,33 @@
+
+Components: used for building the data
+
+
+
+Services: are used for handling business logic, data fetching, state management,
+and operations that are not tied to a specific component.
+
+Services:
+  Services in Angular are primarily responsible for fetching and managing data, interacting with APIs, performing business logic,
+    and managing application state. They encapsulate the logic that is not directly tied to a specific view (component) and promote
+    reusability and maintainability.
+
+  Usage Scenarios:
+    API Interactions: Services fetch data from APIs, handle HTTP requests and responses, and transform or process the data as needed.
+    Business Logic: Services encapsulate business logic, calculations, validations, and any operations that are not specific to a component.
+    State Management: Services can be used to manage and maintain application state, especially when combined with state management libraries.
+    Dependency Injection: Services are designed to be injectable and can be injected into components, directives, or other services to access their functionalities.
+
+
+
+Models: are used to define the shape of data objects, improving type safety, maintaining consistency,
+and enhancing code readability.
+
+Models:
+  Models, on the other hand, define the structure or shape of the data objects used within your application.
+    They serve as blueprints that specify the properties and types of data objects.
+
+  Usage Scenarios:
+    API Responses: When fetching data from APIs, using models helps define the expected shape of the data received from the API.
+    Form Data: When working with Angular forms, defining models can help structure the form data and provide type safety for form controls.
+    State Management: Models can be used to define the shape of the state objects when using state management libraries like NgRx or NgXS.
+    Data Transformation: When manipulating or transforming data within your application, models can help define the structure of the transformed data.
