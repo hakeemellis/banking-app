@@ -1,16 +1,13 @@
-// app.component.ts
-
 import { Component } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-etransfer',
   standalone: true,
   imports: [RouterOutlet, RouterLink, RouterLinkActive],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  templateUrl: './etransfer.component.html',
+  styleUrl: './etransfer.component.scss'
 })
-export class AppComponent {
+export class EtransferComponent {
 
 }
-

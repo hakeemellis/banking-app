@@ -1,1 +1,49 @@
-<p>dashboard works!</p>
+<!-- dashboard.component.html -->
+
+<div class="flex flex-col h-screen">
+  <!-- Navbar -->
+  <nav class="bg-gray-800 px-4 py-2">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-white font-bold">Dashboard</a>
+      <div>
+        <a href="#" class="text-gray-300 hover:text-white px-4">Home</a>
+        <a href="#" class="text-gray-300 hover:text-white px-4">Settings</a>
+        <a href="#" class="text-gray-300 hover:text-white px-4">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Area -->
+  <div class="flex-grow bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+      <h1 class="text-3xl font-bold mb-4">Dashboard</h1>
+      <!-- Your dashboard content goes here -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Example card -->
+        <a routerLink="/chequing" (click)="logAnchorClick()">
+          <div class="bg-white rounded-lg shadow-md p-4">
+            <h2 class="text-xl font-semibold mb-2">Chequing</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet urna nec lorem commodo cursus.</p>
+          </div>
+        </a>
+        <!-- Example card -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+          <h2 class="text-xl font-semibold mb-2">Savings</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet urna nec lorem commodo cursus.</p>
+        </div>
+        <!-- Example card -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+          <h2 class="text-xl font-semibold mb-2">E-Transfer</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet urna nec lorem commodo cursus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <div class="container mx-auto">
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
