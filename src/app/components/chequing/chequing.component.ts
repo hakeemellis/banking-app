@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { TransactionHistoryComponent } from '../transaction-history/transaction-history.component';
+import { ChequingService } from '../../services/chequing.service';
 
 @Component({
   selector: 'app-chequing',
@@ -11,6 +12,17 @@ import { TransactionHistoryComponent } from '../transaction-history/transaction-
 })
 export class ChequingComponent implements OnInit {
 
+  constructor(public chequingService: ChequingService) { } // to import chequing service code to use
+
+
+  ngOnInit(): void {
+
+
+  }
+
+
+/* Previous code
+
   balance: number = 0; // Have to give integer a balance to start | if balance? - it would've turned optional
 
   constructor() { }
@@ -19,5 +31,7 @@ export class ChequingComponent implements OnInit {
 
     this.balance = 1000; // Balance is then defined here
   }
+
+ */
 
 }
