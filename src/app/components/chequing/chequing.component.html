@@ -1,11 +1,24 @@
 <!-- chequing.component.html -->
 
-<div class="container mx-auto py-8">
-  <h2 class="text-2xl font-bold mb-4">Chequing Account</h2>
-  <div class="bg-white rounded-lg shadow-md p-4 mb-4">
-    <h3 class="text-lg font-semibold mb-2">Balance: {{ chequingService.balance }}</h3>
-    <!-- Include shared transaction history component -->
-    <app-transaction-history></app-transaction-history>
-  </div>
-</div>
+<app-navbar></app-navbar>
 
+    <div class="flex flex-col h-screen bg-gray-100 mx-auto pt-20 py-8">
+
+      <h2 class="text-3xl font-bold mt-10 mb-4 rounded-lg p-4">Chequing Account</h2>
+
+      <br>
+
+      <div class="container mx-auto bg-white rounded-lg shadow-md p-4 mb-4 max-w-3xl justify-center items-center">
+        <h3 class="text-xl font-semibold mb-2 flex justify-between items-center">
+          <span>Balance</span>
+          <span class="ml-auto">${{ chequingService.balance }}</span>
+        </h3>
+      </div>
+
+      <div class="container bg-white mx-auto rounded-lg shadow-md p-4 mb-4 max-w-5xl">
+        <app-transaction-history></app-transaction-history>
+      </div>
+
+    </div>
+
+<app-footer></app-footer>

@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { TransactionHistoryComponent } from '../transaction-history/transaction-history.component';
 import { ChequingService } from '../../services/chequing.service';
+import { NavbarComponent } from '../navbar/navbar.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-chequing',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, TransactionHistoryComponent],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, TransactionHistoryComponent, NavbarComponent, FooterComponent],
   templateUrl: './chequing.component.html',
   styleUrl: './chequing.component.scss'
 })
