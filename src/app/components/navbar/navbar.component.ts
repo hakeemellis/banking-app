@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { AppComponent } from './../../app.component';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink, RouterOutlet, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -8,6 +9,17 @@ import { RouterLink, RouterOutlet, RouterLinkActive } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
+
+  constructor(public AppComponent: AppComponent) {}
+
+  ngOnInit(): void {
+
+  }
+
+  toggleDarkMode(event: Event): void {
+    event.preventDefault(); // Blocks href from executing
+    this.AppComponent.toggleDarkMode();
+  }
 
 }

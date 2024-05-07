@@ -13,7 +13,7 @@
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 18px;
-  background-color: #3c546b;
+  background-color: rgb(5 150 105);
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -21,6 +21,6 @@
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #0056b3;
+    background-color: rgb(4 120 87);
   }
 }

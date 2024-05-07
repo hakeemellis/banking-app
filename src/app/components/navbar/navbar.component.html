@@ -1,13 +1,15 @@
   <!-- navbar.component.html -->
 
 
-  <nav class="bg-slate-700 shadow-md shadow-slate-500 px-4 py-7 fixed w-full top-0 z-20">
+  <nav class="bg-emerald-600 dark:bg-white shadow-md shadow-emerald-700 px-4 py-6 fixed w-full top-0 z-20">
     <div class="container mx-auto flex justify-between items-center">
       <a href="#" class="text-white font-bold text-2xl">Angular Banking</a>
       <div>
         <a href="#" class="text-white hover:text-gray-300 font-semibold px-4">Home</a>
         <a href="#" class="text-white hover:text-gray-300 font-semibold px-4">Settings</a>
         <a href="#" class="text-white hover:text-gray-300 font-semibold px-4">Logout</a>
+        <a href="#" class="text-white hover:text-gray-300 font-semibold px-4"
+        (click)="toggleDarkMode($event)">Dark</a>
       </div>
     </div>
   </nav>
