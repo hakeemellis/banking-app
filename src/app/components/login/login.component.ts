@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { Router, RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+//import { FirebaseAuthService } from '../../services/firebase.service';
+//import { AuthService } from '../../shared/services/auth.service';
+
 
 @Component({
   selector: 'app-login',
@@ -10,7 +13,7 @@ import { Router, RouterOutlet, RouterLink, RouterLinkActive } from '@angular/rou
 })
 export class LoginComponent {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, /*public authService: AuthService*/) {}
 
   navigateToDashboard(): void {
     this.router.navigate(['dashboard']);

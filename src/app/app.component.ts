@@ -1,7 +1,8 @@
 // app.component.ts
 
 import { Component } from '@angular/core';
-import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+import { Router, RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+import { AuthService } from './shared/services/auth.service';
 
 
 @Component({
@@ -12,6 +13,8 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  constructor(public router: Router, public authService: AuthService) {}
 
   // Dark Mode
   darkMode = false;
