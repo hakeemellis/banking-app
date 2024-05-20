@@ -6,6 +6,7 @@ import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ChequingComponent } from './components/chequing/chequing.component';
 import { TransactionHistoryComponent } from './components/transaction-history/transaction-history.component';
+import { SignupComponent } from './components/signup/signup.component';
 
 
 export const routes: Routes = [
@@ -15,4 +16,5 @@ export const routes: Routes = [
     { path: 'dashboard', component: DashboardComponent }, // Loads Login Components
     { path: 'chequing', component: ChequingComponent }, // Loads Chequing Components
     { path: 'transactionhistory', component: TransactionHistoryComponent }, // Loads Transaction History Components
+    { path: 'signup', component: SignupComponent }, // Loads Transaction History Components
 ];
