@@ -3,7 +3,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { TransactionHistoryComponent } from '../transaction-history/transaction-history.component';
 import { ChequingService } from '../../services/chequing.service';
 import { NavbarComponent } from '../navbar/navbar.component';
-import { FooterComponent } from '../../footer/footer.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-chequing',
